@@ -243,14 +243,14 @@
             gap: 2rem;
         }
 
-        /* .project-card { */
+        .project-card {
             
             /* background-image: url(/profile.png); */
-            /* background-size: cover;
+            background-size: cover; 
             background-position: center;
             background-repeat: no-repeat;
-            border-radius: 20px; */
-        /* } */
+            border-radius: 20px; 
+        } 
 
         .project-card:hover {
             transform: translateY(-10px);
