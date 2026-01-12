@@ -346,6 +346,7 @@
         .blog-content h3 {
             margin-bottom: 0.5rem;
             color: var(--text-dark);
+            color: var(--primary-color)
         }
 
         .blog-content p {
