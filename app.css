@@ -245,7 +245,7 @@
 
         .project-card {
             
-            /* background-image: url(/profile.png); */
+            /* background-image: url(/profile.png);  */
             background-size: cover; 
             background-position: center;
             background-repeat: no-repeat;
@@ -582,6 +582,36 @@
         .comment-text {
             color: var(--text-light);
         }
+
+        .social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #e6ecf3;  /* softer white for dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #1b1f3b;  /* deep navy icon color */
+    transition: 0.25s ease-in-out;
+    border: 2px solid transparent;
+}
+
+.icon:hover {
+    background: #ffffff;
+    border-color: #4c6fff;  /* nice blue highlight */
+    transform: translateY(-3px);
+}
+
+
+
 
         /* Animations */
         @keyframes fadeInUp {
