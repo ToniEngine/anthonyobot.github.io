@@ -27,7 +27,8 @@ if (resumeBtn) {
         e.preventDefault();
         
         // Replace 'Anthony_Obot_Resume.pdf' with your actual resume filename
-        // const resumeFileName = 'Anthony_Obot_Resume.pdf';
+        const resumeFileName = 'Anthony_Obot_Resume.pdf';
+
         
         // Create a temporary link element
         const link = document.createElement('a');
