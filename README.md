@@ -1,15 +1,16 @@
 # Anthony Obot Portfolio (React)
 
-This portfolio has been migrated from static HTML/CSS/JS to a React + Vite app.
+This repository now contains:
 
-## Local development
+- React app (deploy target): project root
+- Legacy static website backup: `legacy-static-site/`
+
+## Run React app locally
 
 ```bash
 npm install
 npm run dev
 ```
-
-Open the local URL printed in your terminal (usually `http://localhost:5173`).
 
 ## Build and preview
 
@@ -18,23 +19,29 @@ npm run build
 npm run preview
 ```
 
-## GitHub Pages deployment
+## Deploy to Vercel
 
-Deployment is handled by GitHub Actions in:
+### Option 1: Vercel dashboard (recommended)
 
-- `.github/workflows/static.yml`
+1. Push this repo to GitHub.
+2. In Vercel, click **Add New Project** and import this repo.
+3. Vercel should auto-detect Vite settings from `vercel.json`.
+4. Click **Deploy**.
 
-On each push to `main`, the workflow builds the app and deploys `dist/` to GitHub Pages.
-
-## How to view what changed
-
-```bash
-git status
-git diff
-```
-
-For a compact commit-ready summary:
+### Option 2: Vercel CLI
 
 ```bash
-git diff --stat
+npm i -g vercel
+vercel
+vercel --prod
 ```
+
+## Legacy website backup
+
+The old HTML/CSS/JS version is fully preserved in:
+
+- `legacy-static-site/`
+
+To run it directly, open:
+
+- `legacy-static-site/index.html`
